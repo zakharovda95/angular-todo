@@ -4,8 +4,6 @@ import { DefaultLayoutComponent } from './default-layout.component';
 
 @NgModule({
   declarations: [HeaderComponent, DefaultLayoutComponent],
-  exports: [
-    DefaultLayoutComponent
-  ]
+  exports: [DefaultLayoutComponent],
 })
 export class DefaultLayoutModule {}
