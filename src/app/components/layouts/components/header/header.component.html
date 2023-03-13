@@ -1,14 +1,10 @@
-<nav class="w-full h-[80px] px-10 py-5 flex flex-row items-center justify-between bg-blue-400">
-  <div class="flex text-gray-700 text-[calc(1vw+1vh*0.3)] text-center">
-    <h1>
+<nav class="w-full h-[80px] px-5 flex flex-row items-center justify-between bg-blue-400">
+  <div class="bg-blue-700 flex items-center px-5 rounded-full">
+    <h2 class="flex text-white text-[calc(1vw+1vh*0.1)] text-center">
       Easy <br />
       Kanban Board
-    </h1>
+    </h2>
   </div>
 
-  <button
-    class="flex text-white bg-blue-600 text-2xl p-3 w-[60px] h-[60px] rounded-[50%] items-center justify-center active:shadow-blue-900"
-  >
-    +
-  </button>
+  <UIButton [buttonSettings]="AddButtonSettings" [buttonStyles]="AddButtonStyle" />
 </nav>

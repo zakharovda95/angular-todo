@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { LayoutsModule } from './components/layouts/layouts.module';
-import { DefaultLayoutModule } from './components/layouts/default/default-layout.module';
-import { KanbanBoardModule } from './components/pages/main/kanban-board/kanban-board.module';
+import { PagesModule } from './components/pages/pages.module';
+import { UiModule } from './components/UI/ui.module';
+import {MainPageModule} from "./components/pages/main/main-page.module";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutsModule, DefaultLayoutModule, KanbanBoardModule],
+  imports: [BrowserModule, AppRoutingModule, LayoutsModule, PagesModule, UiModule, MainPageModule],
   providers: [],
   bootstrap: [AppComponent],
 })
